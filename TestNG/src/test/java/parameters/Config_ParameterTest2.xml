@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test_Suite_Name_From_XML" parallel="false">
+
+	<parameter name="TestSuiteGlobalParameter" value="SOME_GLOBAL_VALUE" />
+
+	<test name="TestRun1">
+		<!-- This parameters will be passed this test only -->
+		<parameter name="actualTestValueParameter" value="Value1"></parameter>
+		<parameter name="expectedTestValueParameter" value="Value1"></parameter>
+		
+        <classes>
+            <class name="parameters.ParameterTest2">
+                <methods>
+                    <include name="Test1" />
+                </methods>
+            </class>
+        </classes>
+	</test>
+	
+	<test name="TestRun2">
+		<!-- This parameters will be passed this test only -->
+		<parameter name="actualTestValueParameter" value="Value2"></parameter>
+		<parameter name="expectedTestValueParameter" value="Value2"></parameter>
+        <classes>
+            <class name="parameters.ParameterTest2">
+                <methods>
+                    <include name="Test2" />
+                </methods>
+            </class>
+        </classes>
+	</test>
+	
+	<test name="TestRun2_3">
+		<!-- This parameters will be passed this test only -->
+		<parameter name="actualTestValueParameter" value="Value33"></parameter>
+		<parameter name="expectedTestValueParameter" value="Value33"></parameter>
+        <classes>
+            <class name="parameters.ParameterTest2">
+                <methods>
+                    <include name="Test2" />
+                </methods>
+            </class>
+        </classes>
+	</test>
+	
+	<test name="TestRun3">
+		<!-- This parameters will be passed this test only -->
+		<parameter name="actualTestValueParameter" value="Value33"></parameter>
+		<parameter name="expectedTestValueParameter" value="Value33"></parameter>
+        <classes>
+            <class name="parameters.ParameterTest2">
+                <methods>
+                    <include name="Test3" />
+                </methods>
+            </class>
+        </classes>
+	</test>
+  
+</suite>

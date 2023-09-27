@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgParametersSuite" parallel="false">
+
+	<test name="Some_Test_Suite_Name">
+        <classes>
+            <class
+                name="Groups.TestGroups" />
+        </classes>
+    </test>
+	
+	<groups>
+		<run>
+			<include name="smoke"/>
+			<include name="pefrormance"/>
+			<!--exclude name="pefrormance"/-->
+		</run>
+	</groups>
+
+</suite>

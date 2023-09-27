@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Optional test Suite" verbose="1">
+ 
+  <test name="Test1">
+    <parameter name="value1" value="Val" />
+    <parameter name="value2" value="Val" />
+    <parameter name="expected" value="Valu1Valu2" />
+    <classes>
+      <class name="parameters.Params_SetUP_BeforeClass" />
+    </classes>
+  </test>
+
+  <test name="Test2">
+    <parameter name="value1" value="Valu1" />
+    <parameter name="value2" value="Valu2" />
+    <parameter name="expected" value="Valu1Valu2" />
+    <classes>
+      <class name="parameters.Params_SetUP_BeforeClass" />
+    </classes>
+  </test>
+ 
+   <test name="Test3">
+    <parameter name="value1" value="Valu1" />
+    <parameter name="value2" value="Valu2" />
+    <classes>
+      <class name="parameters.Params_SetUP_BeforeClass" />
+    </classes>
+  </test>
+  
+  <test name="Test4">
+    <parameter name="value1" value="11" />
+    <parameter name="value2" value="22" />
+    <parameter name="expected" value="1122" />
+    <classes>
+      <class name="parameters.Params_SetUP_BeforeClass" />
+    </classes>
+  </test>
+ 
+</suite>

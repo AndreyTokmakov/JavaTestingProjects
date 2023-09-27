@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgParametersSuite" parallel="false">
+  <parameter name="factory-param1" value="Factory"></parameter>
+  <parameter name="factory-param2" value="Example"></parameter>
+    <test name="TestNgParametersTest">
+        <classes>
+            <class
+                name="ParamsInFabric.TestFactory" />
+        </classes>
+    </test>
+</suite>

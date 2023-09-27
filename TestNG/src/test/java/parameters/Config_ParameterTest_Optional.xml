@@ -1,0 +1,16 @@
+<suite name="Optional test Suite" verbose="1">
+ 
+  <test name="Test 1">
+    <classes>
+      <class name="parameters.ParameterTest_Optional" />
+    </classes>
+  </test>
+ 
+  <test name="Test 2">
+    <parameter name="optional-value" value="Some_Test_Value_Configured_in_FIle" />
+    <classes>
+      <class name="parameters.ParameterTest_Optional" />
+    </classes>
+  </test>
+ 
+</suite>

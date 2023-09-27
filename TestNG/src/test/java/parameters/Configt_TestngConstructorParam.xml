@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgParametersSuite" parallel="false">
+    <parameter name="constructor_parameter" value="Constructor argument example"></parameter>
+    <test name="TestNgParametersTest">
+        <classes>
+            <class name="parameters.TestNgConstructorParameterExample" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgParametersSuite" parallel="methods" thread-count="2" >
+	<test name="Some_Test_Suite_Name" group-by-instances="true">
+        <classes>
+            <class
+                name="ParallelExecution.ParallelMethodTest" />
+        </classes>
+    </test>
+</suite>
