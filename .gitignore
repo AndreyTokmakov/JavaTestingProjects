@@ -27,4 +27,5 @@ replay_pid*
 */target/*
 .idea/
 *.class
+*.allure
 *allure-results*

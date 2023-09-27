@@ -9,6 +9,7 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
+      <module>JUnit5_Maven_Allure</module>
       <module>JUnit5_Test</module>
       <module>TestNG</module>
       <module>SeleniumTests</module>
@@ -29,20 +30,6 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-          <source>17</source>
-          <target>17</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -55,13 +42,13 @@
 
     <testng.version>7.7.0</testng.version>
 
-    <allure.version>2.19.0</allure.version>
+    <allure.version>2.21.0</allure.version>
     <awaitility.version>4.2.0</awaitility.version>
-    <assertj.version>3.23.1</assertj.version>
-    <lombok.version>1.18.24</lombok.version>
+    <assertj.version>3.24.2</assertj.version>
+    <lombok.version>1.18.26</lombok.version>
 
-    <apache.log4j.version>2.18.0</apache.log4j.version>
-    <slf4j.version>2.0.0</slf4j.version>
+    <apache.log4j.version>2.20.0</apache.log4j.version>
+    <slf4j.version>2.0.5</slf4j.version>
     <commons.logging.version>1.2</commons.logging.version>
 
     <apache.lang.version>3.12.0</apache.lang.version>
@@ -70,9 +57,41 @@
     <gson.version>2.9.0</gson.version>
     <json.simple.version>1.1.1</json.simple.version>
 
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+
     <wiremock.version>2.27.2</wiremock.version>
-    <rest.assured.version>5.1.1</rest.assured.version>
+    <rest.assured.version>5.3.0</rest.assured.version>
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>17</source>
+          <target>17</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
+      </plugin>
+      <!-- Maven plugin to use perticular java version to compile code -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
 
   <dependencies>
     <dependency>
@@ -126,7 +145,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>2.13.3</version>
+      <version>2.14.2</version>
     </dependency>
 
     <dependency>
@@ -138,7 +157,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.13.4.1</version>
+      <version>2.15.1</version>
     </dependency>
 
     <dependency>
@@ -269,7 +288,6 @@
       <artifactId>jcommander</artifactId>
       <version>1.82</version>
     </dependency>
-
   </dependencies>
 
 </project>
