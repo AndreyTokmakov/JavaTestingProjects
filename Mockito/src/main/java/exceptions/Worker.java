@@ -11,9 +11,17 @@ public class Worker
     {
         try {
             return "Success: " + service.getMessage();
-        }
-        catch (Exception exc) {
+        } catch (Exception exc) {
             return "Failure: " + exc.getMessage();
+        }
+    }
+
+    public String callServiceWithParam(String prefix)
+    {
+        try {
+            return prefix + " : " + service.getMessageWithParam(prefix);
+        } catch (Exception exc) {
+            return prefix + ": " + exc.getMessage();
         }
     }
 }

@@ -12,4 +12,10 @@ public class Service
         String dateTimeString = LDT_FORMATTER.format(LocalDateTime.now());
         return "Current time is " + dateTimeString;
     }
+
+    public String getMessageWithParam(String prefix)
+    {
+        String dateTimeString = LDT_FORMATTER.format(LocalDateTime.now());
+        return prefix + " : " + dateTimeString;
+    }
 }
