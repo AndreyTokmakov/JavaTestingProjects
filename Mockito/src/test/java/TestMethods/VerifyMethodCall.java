@@ -7,9 +7,10 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)// подключили Mockito к тестовому классу
-public class VerifyMethodCall {
+public class VerifyMethodCall
+{
     @Mock
-    Car car; // создали мок
+    Car car;
 
     @Test
     public void callOK() {
@@ -22,6 +23,4 @@ public class VerifyMethodCall {
         car.setCarBrand("Lamborghini"); // вызвали метод объекта с аргументом
         Mockito.verify(car).setCarBrand("Lada"); // проверили, что метод вызван с этим параметром
     }
-
-
 }

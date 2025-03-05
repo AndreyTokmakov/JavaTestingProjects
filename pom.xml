@@ -45,7 +45,7 @@
     <allure.version>2.21.0</allure.version>
     <awaitility.version>4.2.0</awaitility.version>
     <assertj.version>3.24.2</assertj.version>
-    <lombok.version>1.18.26</lombok.version>
+    <lombok.version>1.18.30</lombok.version>
 
     <apache.log4j.version>2.20.0</apache.log4j.version>
     <slf4j.version>2.0.5</slf4j.version>
